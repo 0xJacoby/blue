@@ -22,7 +22,6 @@ def get_prefix(client, message):
 
 
 client = commands.Bot(command_prefix=get_prefix)
-
 extensions = ["cmds", "bgts", "m_cmds", "dm_cmds", "skolcmds", "sciencecmds"]
 
 
@@ -41,7 +40,6 @@ async def on_ready():
         if not str(guild.id) in _guilds:
             _guilds[str(guild.id)] = {}
             _guilds[str(guild.id)]["prefix"] = '!'
-            _guilds[str(guild.id)]["skolcmds"] = False
 
     with open("databases/guild_database.json", "w") as f:
         json.dump(_guilds, f)
@@ -53,7 +51,6 @@ async def on_ready():
         for user in guild.members:
             if not str(user.id) in users:
                 users[str(user.id)] = {}
-                users[str(user.id)]["username"] = user.name
                 users[str(user.id)]["coins"] = 0
                 users[str(user.id)]["dm_prefix"] = '!'
                 users[str(user.id)]["used_daily_coin"] = False
