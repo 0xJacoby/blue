@@ -67,8 +67,6 @@ if __name__ == "__main__":
         except Exception as error:
             print("{} cannot be loaded. [{}]".format(extension, error))
 
-client.run("NTAxNjU3NDQ0OTkzNDY2Mzgw.DqeQ9w.6X-NLAi3F9ZjLq2slekozRo-0zw")
+client.run("key")
 
-# debug NTAxMDQ2MTExMjE0MjM5Nzc0.DqdHvg.n9T-tJcTg9G8frUGhoSaceFfFvY
-# main NTAxNjU3NDQ0OTkzNDY2Mzgw.DqeQ9w.6X-NLAi3F9ZjLq2slekozRo-0zw
-# https://discordapp.com/oauth2/authorize?&client_id=501657444993466380&scope=bot&permissions=2146958839
+
